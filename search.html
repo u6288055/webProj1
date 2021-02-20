@@ -1,144 +1,114 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {
-  font-family: sans-serif;
-}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    html {
+      height: 100%;
+    }
 
-* {
-  box-sizing: border-box;
-}
+    body {
+      font-family: sans-serif;
+      height: 100%;
+      margin: 0;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-color: #2E4053;
+      background-image: linear-gradient(rgb(52, 174, 245), rgb(87, 201, 182));
+    }
 
-h1 {
-            padding: 20px;
-            margin-bottom: 0px;
-            display: flex;
-            background-color: #2E4053;
-            text-align: light;
-            color: #F8F9F9;
-        }
+    * {
+      box-sizing: border-box;
 
-.openBtn {
-  background: #f1f1f1;
-  border: none;
-  padding: 10px 15px;
-  font-size: 20px;
-  cursor: pointer;
-}
+    }
 
-.home {
-  background: #f1f1f1;
-  border: none;
-  padding: 10px 15px;
-  font-size: 20px;
-  cursor: pointer;
-}
 
-.openBtn:hover {
-  background: #bbb;
-}
+    header {
+      text-align: light;
+      color: #F8F9F9;
+      margin-top: 0px;
+      margin-left: 20px;
+    }
 
-.overlay {
-  height: 100%;
-  width: 100%;
-  display: none;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
-}
+    h1 {
+      display: inline-table;
+    }
 
-.overlay-content {
-  position: relative;
-  top: 46%;
-  width: 80%;
-  text-align: center;
-  margin-top: 30px;
-  margin: auto;
-}
+    input#home {
+      width: 20%;
+      height: 36px;
+      display: block;
+      border: none;
+      border-radius: 5px 5px 5px 5px;
+      align-items: center;
+      float: right;
+      margin-top: 17px;
+      margin-right: 10px;
+      font-size: 17px;
+      background: lightslategray;
+    }
 
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-  cursor: pointer;
-  color: white;
-}
+    input#home:hover {
+      background: cadetblue;
+    }
 
-.overlay .closebtn:hover {
-  color: #ccc;
-}
+    form.box input[type=text] {
+      align-items: center;
+      padding: 10px;
+      font-size: 17px;
+      border: 1px solid grey;
+      float: left;
+      width: 80%;
+      background: #f1f1f1;
+    }
 
-.overlay input[type=text] {
-  padding: 15px;
-  font-size: 17px;
-  border: none;
-  float: left;
-  width: 80%;
-  background: white;
-}
+    /* form.example input[type=text] {
+      padding: 10px;
+      font-size: 17px;
+      border: 1px solid grey;
+      float: left;
+      width: 80%;
+      background: #f1f1f1;
+    } */
 
-.overlay input[type=text]:hover {
-  background: #f1f1f1;
-}
+    /* form.example button {
+      float: left;
+      width: 20%;
+      padding: 10px;
+      background: #2196F3;
+      color: white;
+      font-size: 17px;
+      border: 1px solid grey;
+      border-left: none;
+      cursor: pointer;
+    }
 
-.overlay button {
-  float: left;
-  width: 20%;
-  padding: 15px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-}
+    form.example button:hover {
+      background: #0b7dda;
+    }
 
-.overlay button:hover {
-  background: #bbb;
-}
-</style>
+    form.example::after {
+      content: "";
+      clear: both;
+      display: table;
+    } */
+  </style>
 </head>
+
 <body>
 
-<div id="myOverlay" class="overlay">
-  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
-  <div class="overlay-content">
-    <form action="/action_page.php">
-      <input type="text" placeholder="Search" name="search">
-      <!-- อันนี้ต้องใส่ที่จะไปหาของต้น -->
-      <button type="submit"><i class="fa fa search"></i></button>
-    </form>
-  </div>
-</div>
+  <header id="top">
+    <h1>SHOPME</h1>
+    <input id="home" type="button" value="Home">
+  </header>
 
-<h1>ShopMe</h1>
-<p> </p>
-<button class="openBtn" onclick="openSearch()">Press to Search</button>
-<button class="home" onclick="home">home</button>
-
-<script>
-function openSearch() {
-  document.getElementById("myOverlay").style.display = "block";
-}
-
-function closeSearch() {
-  document.getElementById("myOverlay").style.display = "none";
-}
- //โค้ดที่ต้องใส่อยู่นี้
-// function goToResult() {
-//   document.getElementById("myOverlay").link
-// }
-
-//อันนี้กลับhome 
-// function home() {
-//   document.getElementsByClassName("home")
-// } 
-//ฝากด้วย
-</script>
-     
+  <p> </p>
+  <br><br>
+  <form class="box">
+    <input type="text" placeholder="Search.." name="search">
+    <button type="submit"><i class="search">search</i></button>
+  </form>
 </body>
+
 </html>
