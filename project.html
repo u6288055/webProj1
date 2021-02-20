@@ -2,339 +2,395 @@
 <html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        * {
-          box-sizing: border-box;
-        }
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-        body {
-            font-family: sans-serif;
-            background-color:aliceblue;
-            margin: 0;
-        }
+    body {
+      font-family: sans-serif;
+      background-color: aliceblue;
+      margin: 0;
+    }
 
-        header,footer {
-            background-color: #2E4053;
-            text-align: light;
-            color: #F8F9F9;
-        }
+    header,
+    footer {
+      background-color: #2E4053;
+      text-align: light;
+      color: #F8F9F9;
+    }
 
-        header {
-          margin-top: 0px;
-        }
+    header {
+      margin-top: 0px;
+    }
 
-        footer{
-          
-          text-align: center;
-        }
+    footer {
 
-        footer p{
-          padding: 5px;
-        }
+      text-align: center;
+    }
 
-        .foo {
-          padding: 1px;
-          margin: 1px;
-          background-color:cadetblue;
-          justify-content: center;
-        }
+    footer p {
+      padding: 5px;
+    }
 
-        .foo h4{
-          
-          text-decoration: none;
-          text-transform: none;
-          color: white;
-        }
+    .foo {
+      padding: 1px;
+      margin: 1px;
+      background-color: cadetblue;
+      justify-content: center;
+    }
 
-        .foo:hover{
-          background-color: rgb(144, 205, 207);
-        }
+    .foo h4 {
 
-        .con {
-          padding: 3px;
-          justify-content: center;
-          display: flex;
-          flex-direction: column;
-        }
+      text-decoration: none;
+      text-transform: none;
+      color: white;
+    }
 
-        h1 {
-            padding: 20px;
-            margin-bottom: 0px;
-        }
+    .foo:hover {
+      background-color: rgb(144, 205, 207);
+    }
 
-        .navbar {
-            background-color: #2E4053;
-            width: 100%;
-            overflow: auto;
-            /*
+    .con {
+      padding: 3px;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    h1 {
+      padding: 20px;
+      margin-bottom: 0px;
+    }
+
+    .navbar {
+      background-color: #2E4053;
+      width: 100%;
+      overflow: auto;
+      /*
             display: flex;
             flex-direction: row;
             align-items: center;*/
-        }
+    }
 
-        .navbar a {
-          float: left;
-          color: #FDFEFE;
-          padding: 14px 16px;
-          text-decoration: none;
-        }
+    .navbar a {
+      float: left;
+      color: #FDFEFE;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
 
-        .navbar a:hover {
-            background-color: #85929E;
-        }
+    .navbar a:hover {
+      background-color: #85929E;
+    }
 
-        .h3.p1{
-           align-items: center;
-           position: relative;
-           
-        }
-        .slide
-        {
-          display: block;
-          margin-left: auto;  
-          margin-right: auto;  
-          height: 300px;
-          align-items: center;
-          justify-content: center;
-          margin-top:20px;
-        }
+    .h3.p1 {
+      align-items: center;
+      position: relative;
 
-        .container{
-            display: flex;
-            justify-content: center;
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-        .card{
-          
-          text-align: center;
-          width: 27%;
-          display: flex;
-          flex-direction: column;
-          padding: 20px;
-          margin: 10px;
-          background-color: rgb(247, 246, 245);  
-          justify-content: center;
-          border-radius: 50px;
+    }
 
-        }
-        .card-img-top{
-            height: 400px;
-          }
-        .card-img-top:hover{
-            opacity:0.5;
-          }
-          .des {          
-          color: lightslategray;
-          font-size: 12px;
-          
-          text-align: center;
-        }
+    .slide {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      height: 300px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
 
-        .price {
-          color: lightslategray;
-          font-size: 17px;
-          text-align: center;
-        }
-        .card button{
-          border: none;
-          color: white;
-          padding: 12px;
-          background-color: #2E4053;
-          text-align: center;
-          cursor: pointer;
-          width: 190px;
-        }
+    .container {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
 
-        .card button:hover {
-          background-color: cadetblue;
-        }
-        .card:hover{
-          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
-          border: solid #95A5A6 2px;
-        }
-        .sp
-        {
-            width:500px;
-            height:80px;
-            background:#fff;
-            box-shadow: 2px 5px 5px 0px rgba (0,0,0,0.15);
-         
-        }
-        .sp h1{
-            text-align: center;
-            text-transform: uppercase;
-            font-family: "Helvetica", sans-serif;
-        }
-       .pic{
-         height:500px;
-         width:auto;
-         
-       }
-       .columnft
-       {
-         
-         flex-direction:row;
-       }
+    .card {
 
-    
-       
-        /*end adver*/
-        
-    </style>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      text-align: center;
+      width: 27%;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      margin: 10px;
+      background-color: rgb(247, 246, 245);
+      justify-content: center;
+      border-radius: 50px;
+
+    }
+
+    .card-img-top {
+      height: 400px;
+    }
+
+    .card-img-top:hover {
+      opacity: 0.5;
+    }
+
+    .des {
+      color: lightslategray;
+      font-size: 12px;
+
+      text-align: center;
+    }
+
+    .price {
+      color: lightslategray;
+      font-size: 17px;
+      text-align: center;
+    }
+
+    .card button {
+      border: none;
+      color: white;
+      padding: 12px;
+      background-color: #2E4053;
+      text-align: center;
+      cursor: pointer;
+      width: 190px;
+    }
+
+    .card button:hover {
+      background-color: cadetblue;
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
+      border: solid #95A5A6 2px;
+    }
+
+    .sp {
+      width: 500px;
+      height: 80px;
+      background: #fff;
+      box-shadow: 2px 5px 5px 0px rgba (0, 0, 0, 0.15);
+
+    }
+
+    .sp h1 {
+      text-align: center;
+      text-transform: uppercase;
+      font-family: "Helvetica", sans-serif;
+    }
+
+    .pic {
+      height: 500px;
+      width: auto;
+
+    }
+
+    .columnft {
+
+      flex-direction: row;
+    }
+
+    input#search {
+      float: right;
+      height: 36px;
+      width: 250px;
+      border: none;
+      border-radius: 0px 5px 5px 0px;
+      padding: 6px;
+      margin-top: 8px;
+      margin-right: 16px;
+      font-size: 17px;
+    }
+
+    /* search */
+    input#submit {
+      width: 36px;
+      height: 36px;
+      display: block;
+      border: none;
+      border-radius: 5px 0px 0 5px;
+      align-items: center;
+      float: right;
+      margin-top: 8px;
+      font-size: 17px;
+      background: lightslategray;
+
+    }
+
+    input#submit:hover {
+      background: cadetblue;
+
+    }
+
+    /*end adver*/
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
-    <header id="top">
-        <h1>SHOPME
-            <input id = "search" type = "text" placeholder="search">
-            <input id = "submit" type="submit" value="&#128269">
-        </h1>
-    </header>
-    <div class="navbar" >
-      <a href="#top">&#9824 Home</a>
-      <a href="#recommend"> &#9827 search more</a>
-      <a href="login.html"> &#9829 Login</a>
-      <a href="about_us.html"> &#9830 About us</a>
-      
-     
+  <header id="top">
+    <h1>SHOPME
+      <input id="search" type="text" placeholder="search">
+      <input id="submit" type="submit" value="&#128269">
+    </h1>
+  </header>
+  <div class="navbar">
+    <a href="#top">&#9824 Home</a>
+    <a href="#recommend"> &#9827 search more</a>
+    <a href="login.html"> &#9829 Login</a>
+    <a href="about_us.html"> &#9830 About us</a>
 
-    </div>
-  <div class="sp"><h1>New products</h1></div>
-    <div class="slide" style="max-width:500px">
-      <img class="mySlides" src="xbox-2958864_1280.jpg" width="100%" height="100%">
-      <img class="mySlides" src="p5.jpeg" width="100%" height="100%">
-      <img class="mySlides" src="nintendo-switch-(1).jpg" width="100%" height="100%">
-      <img class="mySlides" src="g102.jpg" width="100%" height="100%">
-    </div>
-    
-    <div class="sp"><h1>special for today</h1></div>
+
+
+  </div>
+  <div class="sp">
+    <h1>New products</h1>
+  </div>
+  <div class="slide" style="max-width:500px">
+    <img class="mySlides" src="xbox-2958864_1280.jpg" width="100%" height="100%">
+    <img class="mySlides" src="p5.jpeg" width="100%" height="100%">
+    <img class="mySlides" src="nintendo-switch-(1).jpg" width="100%" height="100%">
+    <img class="mySlides" src="g102.jpg" width="100%" height="100%">
+  </div>
+
+  <div class="sp">
+    <h1>special for today</h1>
+  </div>
   <div class="container">
-    
-        <div class="card" style="width: 18rem;">
-        <img src="zelda.jpg" class="card-img-top" alt="card">
-        <div class="card-body">
-          <h4><b>Legend of Zelda: Breath of the Wild</b></h4>
-          <section class="price"> 1680฿ </section><br>
-          <section class="des">Step into a world of discorvery, exploration, and adventure in The Legend of Zelda.</section><br>
-          <p><button>Add to Cart</button></p>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="sw.jpg" class="card-img-top" alt="card">
-        <div class="card-body">
-            <h4><b>Pokemon Shield</b></h4>
-            <section class="price"> 1690฿ </section><br>
-            <section class="des">Pokemon Sword and Pokemon Shield introduce the Galar region and more Pokemon to discover!</section><br>
-            <p><button>Add to Cart</button></p>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="ow.jpg" class="card-img-top" alt="card">
-        <div class="card-body">
-            <h4><b>Overwatch</b></h4>
-            <section class="price"> 1200฿ </section><br>
-            <section class="des">The World Needs Heros Slow down time, rain destruction from above in a jet-powered armor suit, or pilot superpower hamster in ball.</section><br>
-            <p><button>Add to Cart</button></p>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="det.jpg" class="card-img-top" alt="card">
-        <div class="card-body">
-            <h4><b>Detroit: Become Human</b></h4>
-            <section class="price"> 1200฿ </section><br>
-            <section class="des">Puts the destiny of both mankind and androids in your hands, taking you to a future where machines have become more intelligent than human.</section><br>
-            <p><button>Add to Cart</button></p>
-        </div>
-       </div>
-       <div class="card" style="width: 18rem;">
-        <img src="mon.jpg" class="card-img-top" alt="card">
-        <div class="card-body">
-            <h4><b>Monster Hunter World: Iceborne</b></h4>
-            <section class="price"> 1200฿ </section><br>
-            <section class="des">Iceborne expands the possibilities of Monster Hunter: World's vast breathtaking universe.</section><br>
-            <p><button>Add to Cart</button></p>
-        </div>
-       </div>
-       <div class="card" style="width: 18rem;">
-        <img src="rune.jpg" class="card-img-top" alt="card">
-        <div class="card-body">
-            <h4><b>Rune Factory</b></h4>
-            <section class="price"> 1200฿ </section><br>
-            <section class="des">Rune Factory (ルーンファクトリー, Rūn Fakutorī) is a role-playing simulation video game series developed by Neverland Co., Ltd. for the Nintendo DS, Nintendo 3DS, Nintendo Switch, Wii and the PlayStation 3 video game consoles, and a spin-off of the Harvest Moon/Story of Season video game series.</section><br>
-            <p><button>Add to Cart</button></p>
-        </div>
-       </div>
-       <div class="card" style="width: 18rem;">
-        <img src="twi.jpg" class="card-img-top" alt="card">
-        <div class="card-body">
-            <h4><b>Twilight Princess</b></h4>
-        <section class="price"> 1200฿ </section><br>
-        <section class="des">The Legend of Zelda: Twilight Princess is an action-adventure game developed and published by Nintendo for the GameCube and Wii home video game consoles.
-           It is the thirteenth installment in the series The Legend of Zelda.</section><br>
+
+    <div class="card" style="width: 18rem;">
+      <img src="zelda.jpg" class="card-img-top" alt="card">
+      <div class="card-body">
+        <h4><b>Legend of Zelda: Breath of the Wild</b></h4>
+        <section class="price"> 1680฿ </section><br>
+        <section class="des">Step into a world of discorvery, exploration, and adventure in The Legend of Zelda.
+        </section><br>
         <p><button>Add to Cart</button></p>
-        </div>
-       </div>
-       <div class="card" style="width: 18rem;">
-        <img src="mine.jpg" class="card-img-top" alt="card">
-        <div class="card-body">
-            <h4><b>Rune Factory</b></h4>
-            <section class="price"> 1200฿ </section><br>
-            <section class="des">Prepare for an adventure of limitless possibilities as you build, mine, battle mobs, and explore the ever-changing Minecraft landscape.</section><br>
-            <p><button>Add to Cart</button></p>
-        </div>
-       </div>
-        
-</div>
-
-  </div>    
-
-  
-    <div class="foo">
-      <a href="#top"><h4>Back to Top</h4></a>
-      
+      </div>
     </div>
-          <!--
+    <div class="card" style="width: 18rem;">
+      <img src="sw.jpg" class="card-img-top" alt="card">
+      <div class="card-body">
+        <h4><b>Pokemon Shield</b></h4>
+        <section class="price"> 1690฿ </section><br>
+        <section class="des">Pokemon Sword and Pokemon Shield introduce the Galar region and more Pokemon to discover!
+        </section><br>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="ow.jpg" class="card-img-top" alt="card">
+      <div class="card-body">
+        <h4><b>Overwatch</b></h4>
+        <section class="price"> 1200฿ </section><br>
+        <section class="des">The World Needs Heros Slow down time, rain destruction from above in a jet-powered armor
+          suit, or pilot superpower hamster in ball.</section><br>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="det.jpg" class="card-img-top" alt="card">
+      <div class="card-body">
+        <h4><b>Detroit: Become Human</b></h4>
+        <section class="price"> 1200฿ </section><br>
+        <section class="des">Puts the destiny of both mankind and androids in your hands, taking you to a future where
+          machines have become more intelligent than human.</section><br>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="mon.jpg" class="card-img-top" alt="card">
+      <div class="card-body">
+        <h4><b>Monster Hunter World: Iceborne</b></h4>
+        <section class="price"> 1200฿ </section><br>
+        <section class="des">Iceborne expands the possibilities of Monster Hunter: World's vast breathtaking universe.
+        </section><br>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="rune.jpg" class="card-img-top" alt="card">
+      <div class="card-body">
+        <h4><b>Rune Factory</b></h4>
+        <section class="price"> 1200฿ </section><br>
+        <section class="des">Rune Factory (ルーンファクトリー, Rūn Fakutorī) is a role-playing simulation video game series
+          developed by Neverland Co., Ltd. for the Nintendo DS, Nintendo 3DS, Nintendo Switch, Wii and the PlayStation 3
+          video game consoles, and a spin-off of the Harvest Moon/Story of Season video game series.</section><br>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="twi.jpg" class="card-img-top" alt="card">
+      <div class="card-body">
+        <h4><b>Twilight Princess</b></h4>
+        <section class="price"> 1200฿ </section><br>
+        <section class="des">The Legend of Zelda: Twilight Princess is an action-adventure game developed and published
+          by Nintendo for the GameCube and Wii home video game consoles.
+          It is the thirteenth installment in the series The Legend of Zelda.</section><br>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="mine.jpg" class="card-img-top" alt="card">
+      <div class="card-body">
+        <h4><b>Rune Factory</b></h4>
+        <section class="price"> 1200฿ </section><br>
+        <section class="des">Prepare for an adventure of limitless possibilities as you build, mine, battle mobs, and
+          explore the ever-changing Minecraft landscape.</section><br>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+
+
+  <div class="foo">
+    <a href="#top">
+      <h4>Back to Top</h4>
+    </a>
+
+  </div>
+  <!--
           <audio audio controls autoplay>
               <source src="pretender.mp3" type="audio/mp3">
           </audio>-->
-  <footer>        
-  <article class="containerft">
-    <article class="columnft"></article>
+  <footer>
+    <article class="containerft">
+      <article class="columnft"></article>
       <p>About us</p>
-      <a href="about_us.html"><p>Click here</p></a>
+      <a href="about_us.html">
+        <p>Click here</p>
+      </a>
     </article>
-    
+
     <article class="columnft">
       <p>email</p>
     </article>
-  
+
     <article class="columnft">
       <p>address</p>
     </article>
-  </article>
-      </footer>
+    </article>
+  </footer>
 </body>
 
 <script>
-var myIndex = 0;
-carousel();
+  var myIndex = 0;
+  carousel();
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {
+      myIndex = 1
+    }
+    x[myIndex - 1].style.display = "block";
+    setTimeout(carousel, 4500); // Change image every 2 seconds
   }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4500); // Change image every 2 seconds
-}
-    </script>
+</script>
 
 </html>
-
